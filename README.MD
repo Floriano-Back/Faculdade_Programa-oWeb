@@ -1,10 +1,9 @@
-🔮 Qual seu Signo
-
+## 🔮 Qual seu Signo
 Aplicação web em PHP que descobre o signo do zodíaco a partir da data de nascimento informada pelo usuário. Os dados dos signos ficam em um arquivo XML, e o resultado é exibido com o símbolo do signo.
 
 Trabalho acadêmico desenvolvido para a disciplina de Programação WEB.
 
-✨ Funcionalidades
+## ✨ Funcionalidades
 Formulário para informar a data de nascimento
 Identificação do signo lendo os dados de um arquivo XML (simplexml_load_file)
 Tratamento do signo de Capricórnio, que atravessa a virada do ano (22/12 a 19/01)
@@ -19,7 +18,8 @@ HTML5 e CSS3
 Bootstrap 5.2
 ```
 
-📁 Estrutura do projeto
+## 📁 Estrutura do projeto
+```
 Project/
 ├── index.php                 # Página inicial com o formulário
 ├── show_zodiac_sign.php      # Processa a data e exibe o signo
@@ -32,8 +32,9 @@ Project/
     │   └── style.css         # Estilos personalizados
     └── imgs/
         └── signos/           # Símbolos dos signos em SVG
+```
 
-🚀 Como executar
+## 🚀 Como executar
 Pré-requisitos
 PHP 7.4 ou superior
 Um servidor local como XAMPP, WAMP ou Laragon (ou o servidor embutido do PHP)
@@ -55,7 +56,7 @@ php -S localhost:8000
 
 Depois acesse http://localhost:8000.
 
-🧩 Como funciona
+## 🧩 Como funciona
 O usuário informa a data de nascimento em index.php.
 O formulário envia os dados por POST para show_zodiac_sign.php.
 O PHP carrega o signos.xml e compara o dia e o mês da data com o período de cada signo.
@@ -74,5 +75,5 @@ xml
 
 Para alterar a descrição de um signo, basta editar a tag <descricao> no XML.
 
-📄 Licença
+## 📄 Licença
 Projeto desenvolvido para fins educacionais.
