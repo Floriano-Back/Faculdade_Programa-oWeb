@@ -11,11 +11,13 @@ Tratamento do signo de Capricórnio, que atravessa a virada do ano (22/12 a 19/0
 Exibição do nome, da descrição, do período e do símbolo do signo
 Layout responsivo com Bootstrap e tema personalizado em CSS
 
-🛠️ Tecnologias
+## 🛠️ Tecnologias
+```
 PHP
 XML
 HTML5 e CSS3
 Bootstrap 5.2
+```
 
 📁 Estrutura do projeto
 Project/
@@ -39,7 +41,7 @@ Um servidor local como XAMPP, WAMP ou Laragon (ou o servidor embutido do PHP)
 Passo a passo
 Clone o repositório:
 bash
-   git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/Floriano-Back/Faculdade_Programa-oWeb.git
 Coloque a pasta do projeto dentro do diretório do servidor (por exemplo, htdocs no XAMPP).
 Inicie o Apache.
 Acesse no navegador:
