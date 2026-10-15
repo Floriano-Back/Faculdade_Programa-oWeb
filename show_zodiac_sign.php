@@ -5,7 +5,8 @@
         <div class="col-md-6 card shadow-sm p-4 text-center resultado-card">
             <?php
             $data_nascimento = $_POST['data_nascimento'] ?? '';
-            $signos = simplexml_load_file("signos.xml");
+            $arquivo_xml = __DIR__ . '/signos.xml';
+            $signos = file_exists($arquivo_xml) ? simplexml_load_file($arquivo_xml) : false;
 
             // Gera o nome do arquivo da imagem a partir do nome do signo (sem acento, minúsculo)
             function slugSigno($nome) {
@@ -18,7 +19,9 @@
 
             $signo_encontrado = null;
 
-            if ($data_nascimento) {
+            if ($signos === false) {
+                echo "<div class='alert alert-danger'>Arquivo signos.xml não encontrado ou inválido. Verifique se ele está na mesma pasta do show_zodiac_sign.php.</div>";
+            } elseif ($data_nascimento) {
                 $data_usuario = new DateTime($data_nascimento);
                 $user_str = sprintf("2000-%02d-%02d", $data_usuario->format('m'), $data_usuario->format('d'));
 
