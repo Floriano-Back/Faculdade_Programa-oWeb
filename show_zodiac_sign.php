@@ -55,7 +55,8 @@
                 </div>
                 <h1 class="signo-titulo mb-3"><?= $nome ?></h1>
                 <p class="lead"><?= htmlspecialchars((string)$signo_encontrado->descricao) ?></p>
-                <p><span class="signo-periodo"><small>Período: <?= htmlspecialchars((string)$signo_encontrado->dataInicio) ?> a <?= htmlspecialchars((string)$signo_encontrado->dataFim) ?></small></span></p>
+                <p><span class="signo-periodo"><small>Período: <?= htmlspecialchars((string)$signo_encontrado->dataInicio) ?> 
+                a <?= htmlspecialchars((string)$signo_encontrado->dataFim) ?></small></span></p>
             <?php } else { ?>
                 <div class="alert alert-danger">Não foi possível identificar o signo.</div>
             <?php } ?>
